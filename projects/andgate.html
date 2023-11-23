@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AND</title>
+    <style>
+        body {
+            background-color: #0c0d13;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: #1a1b26;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h2 {
+            margin: 0;
+        }
+
+        section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 20px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #45a049;
+        }
+
+        footer {
+            background-color: #1a1b26;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>AND Gate Project</h2>
+    </header>
+
+    <section>
+        <button class="button" onclick="and()">Run</button>
+
+        <p>
+            <table>
+                <tr>
+                    <td>
+                        <img src="and2on.png" id="toggleImage" onclick="toggleImage(); toggleInputOne();" />
+                        <br>
+                        <img src="and2off.PNG" id="toggleImage2" onclick="toggleImage2(); toggleInputTwo();" />
+                    </td>
+                    <td><img id="andGate" src="and2off.PNG"></td>
+                </tr>
+            </table>
+        </p>
+
+        <a href="/projects.html">Back to Home</a>
+    </section>
+
+    <footer>
+        <p>&#x20B2; Powered by Gian</p>
+    </footer>
+
+</body>
+
+</html>
